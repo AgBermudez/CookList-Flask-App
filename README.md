@@ -1,66 +1,32 @@
-<div align="center">
+# CookList - Gestor Inteligente de Recetas y Suministros
 
-# Recetas FIUBA
+CookList es una aplicación web desarrollada en **Python** utilizando el framework **Flask**. El objetivo del proyecto es permitir a los usuarios gestionar sus propias recetas y automatizar la generación de listas de compras basadas en los ingredientes necesarios, optimizando la planificación alimenticia.
 
-<img src="logo.jpg" alt="Logo web" width="250"/>
+## 🚀 Características Principales
 
-</div>
+* **Gestión de Usuarios:** Sistema de registro e inicio de sesión seguro con manejo de sesiones (cookies).
+* **Biblioteca de Recetas:** Creación, edición y visualización de recetas personalizadas de forma intuitiva.
+* **Generador de Suministros:** Algoritmo dinámico que consolida los ingredientes de las recetas seleccionadas para generar una lista de compras organizada.
+* **Arquitectura MVC:** Separación clara entre la lógica de negocio, los modelos de datos y la interfaz de usuario.
 
-## Qué es y cuál es su fin?
-Nuestro proyecto es una página de recetas de platos de comida. Esta pagina tiene tres funcionalidades: 
+## 🛠️ Stack Tecnológico
 
-1. Mostrar los platos: Los usuarios pueden ver los platos, guardados en la base de datos, en una vista de la página.
+* **Backend:** Python 3.x, Flask.
+* **Base de Datos:** mySQL (SQL para la persistencia de usuarios, recetas e ingredientes).
+* **Frontend:** HTML5, CSS3, Jinja2 (Motor de plantillas).
+* **Control de Versiones:** Git & GitHub.
 
-2. Generar una lista de compras: En la base de datos se tienen los ingredientes utilizados para cada plato, éstos se pueden muestran al usuario.
+## 📁 Estructura del Proyecto
 
-3. Sugerencias de recetas: El usuario puede acceder con un usuarname y password para poder sugerir platos.
+* `app.py`: Punto de entrada de la aplicación, configuración del servidor y manejo de rutas.
+* `api.py`: RELLENAR.
+* `database.db`: Base de datos relacional para la persistencia de la información.
+* `templates/`: Vistas de la aplicación (Login, Registro, Dashboard, Recetas).
+* `static/`: Recursos estáticos (Estilos CSS, recursos visuales).
 
-## Quiénes lo desarrollan?
-Recetas FIUBA es un proyecto en proceso realizado por estudiantes de la Facultad de Ingeniería de la Universidad de Buenos Aires para la materia de Introducción al Desarrollo de Software.
+## ⚙️ Instalación y Ejecución
 
-## Cómo instalar lo necesario para que me funcione la página web?
-Abrir una terminal dentro de la carpeta Webpage/Savory y ejecutar el primer script 1.sh
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/TU_USUARIO/CookList-Flask-App.git](https://github.com/TU_USUARIO/CookList-Flask-App.git)
 
-    bash 1.sh
-
-Una vez activado el entorno virtual hay que ejecutar el segundo script 2.sh
-
-    bash 2.sh
-
-En esta terminal ejecutaremos la api.py mediante
-
-    python3 api.py
-
-Luego abriremos otra terminal en Webpage/Savory, como hicimos anteriormente, y ejecutaremos
-
-    pipenv shell
-
-Para activar el entorno virtual en esta terminal y luego
-
-    python3 app.py
-
-Para poder correr la pagina web
-
-## Integrantes
-
-### Agustin Bermudez
-    📧 Email: abermudez@fi.uba.ar
-    #️⃣ Padrón: 111863
-### Tiago André Calderón
-    📧 Email: tcalderon@fi.uba.ar
-    #️⃣ Padrón: 111894
-### Mateo Gonzalez Pautaso
-    📧 Email: magonzalezp@fi.uba.ar
-    #️⃣ Padrón: 111699
-### Alejandro Mendez
-    📧 Email: aomendez@fi.uba.ar
-    #️⃣ Padrón: 111756
-### Cristian Ezequiel Urbina
-    📧 Email: curbina@fi.uba.ar
-    #️⃣ Padrón: 112374
-### Lorenzo Julián Vega
-    📧 Email: ljvega@fi.uba.ar
-    #️⃣ Padrón: 111911
-### Ignacio Verruno
-    📧 Email: iverruno@fi.uba.ar
-    #️⃣ Padrón: 111910
